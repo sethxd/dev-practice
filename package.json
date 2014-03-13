@@ -1,0 +1,33 @@
+{
+  "name": "SampleGrunt",
+  "version": "0.1.0",
+  "author": "Seth DeHaan",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-cssc": "*",
+    "grunt-htmlhint": "*",
+    "matchdep": "*"
+  },
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "css-condense": "~0.0.6",
+    "grunt": "~0.4.2",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-less": "~0.10.0",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-cssc": "~0.2.6",
+    "grunt-htmlhint": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "matchdep": "~0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Demo</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/default.css">
+</head>
+<body style="padding-top:70px;">
+	
+	<nav id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		  <div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class   ="nav navbar-nav">
+					<li class   ="active"><a href="#">Link</a></li>
+					<li><a href ="#">No Link</a></li>
+					<li class   ="dropdown">
+					<a href     ="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					<ul class   ="dropdown-menu">
+					<li><a href ="#">Action</a></li>
+					<li><a href ="#">Another action</a></li>
+					<li><a href ="#">Something else here</a></li>
+					<li class   ="divider"></li>
+					<li><a href ="#">Separated link</a></li>
+					<li class   ="divider"></li>
+					<li><a href ="#">One more separated link</a></li>
+					</ul>
+					</li>
+					</ul>
+				</div>
+
+		  </div>
+	</nav>
+
+	<div id="block1" class="container">
+
+	
+		<div class="row">
+			<div class="col-sm-6" style="margin-bottom:10px;">
+				<div id="data"><table class="table" style="border-collapse:collapse;">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Last Name</th>
+							<th>First Name</th>
+							<th>Handle</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr data-toggle="collapse" data-target=".sam" class="accordion-toggle">
+							<td><a href="#"><span class="glyphicon glyphicon-zoom-in"></span></a> 1</td>
+							<td>Smith</td>
+							<td>Sam</td>
+							<td>@ssmith</td>
+						</tr>
+						
+						<tr>
+							<td colspan="4" class="hiddenRow" style="padding:0; padding-left:20px;padding-bottom:10px; border:0;">
+								<div class="accordion-body collapse sam">Sam Smith is a government employee.</div>
+							</td>
+						</tr>
+						
+						<tr data-toggle="collapse" data-target=".john" class="accordion-toggle">
+							<td>2</td>
+							<td>Johnson</td>
+							<td>Jerry</td>
+							<td>@jjohns</td>
+						</tr>
+
+						<tr>
+							<td colspan="4" class="hiddenRow" style="padding:0; padding-left:20px;padding-bottom:10px; border:0;">
+								<div class="accordion-body collapse john">Sam Smith is a government employee.</div>
+							</td>
+						</tr>
+
+<!-- comment comment comment -->
+
+						<tr>
+							<td>3</td>
+							<td>Peters</td>
+							<td>Pat</td>
+							<td>@petersp</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Daniel</td>
+							<td>Derek</td>
+							<td>@ddans</td>
+						</tr>
+					</tbody>
+				</table></div>
+			</div>
+			<div class="col-sm-4">
+				<div class="dropdown" style="float:right; margin-right:15px;">
+					<button style="background:#fff;" class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+					Select an organization
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li role="presentation"><a data-toggle="modal" data-target=".bs-example-modal-sm" role="menuitem" tabindex="-1" href="#">GLSC</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">VAI</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Etc</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top:20px;">
+			<div class="col-sm-4">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+							1. Outside the Sky</a>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+							2. Mountain Drift</a>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse out">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+							3. Black Ocean</a>
+						</div>
+						<div id="collapse3" class="panel-collapse collapse out">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel-group" id="accordion2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
+							1. Outside the Sky</a>
+						</div>
+						<div id="collapse4" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion2" href="#collapse5">
+							2. Mountain Drift</a>
+						</div>
+						<div id="collapse5" class="panel-collapse collapse out">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion2" href="#collapse6">
+							3. Black Ocean</a>
+						</div>
+						<div id="collapse6" class="panel-collapse collapse out">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel-group" id="accordion3">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion3" href="#collapse7">
+							1. Outside the Sky</a>
+						</div>
+						<div id="collapse7" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion3" href="#collapse8">
+							2. Mountain Drift</a>
+						</div>
+						<div id="collapse8" class="panel-collapse collapse out">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion3" href="#collapse9">
+							3. Black Ocean</a>
+						</div>
+						<div id="collapse9" class="panel-collapse collapse out">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nam, harum, consequatur libero quod hic fuga nobis iste ducimus fugit quis quo fugiat natus adipisci est repudiandae reiciendis sunt modi!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+		<div class="modal-content" style="padding:20px;">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, facilis, consequatur, quibusdam ipsa suscipit ullam excepturi voluptatibus tenetur cumque dolorem odit quo amet facere hic enim iste laboriosam ea modi!</p>
+		</div>
+		</div>
+		</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

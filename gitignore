@@ -17,5 +17,5 @@ results
 build
 .grunt
 
-node_modules
+node_modules/**/*
 
